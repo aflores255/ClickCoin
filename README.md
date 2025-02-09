@@ -28,7 +28,7 @@ The contract is written in **Solidity (0.8.24)** and utilizes OpenZeppelin libra
 |----------|-------------|
 | `approve` | Allows a spender to spend a specified amount of tokens on behalf of the owner. |
 | `transfer` | Transfers tokens from the caller’s address to another address. |
-| `transferFrom` | Transfers tokens from one address to another if the caller has been approved as a spender This function does not burn any tokens|
+| `transferFrom` | Transfers tokens from one address to another if the caller has been approved as a spender|
 | `allowance` | Returns how many tokens a spender is still allowed to spend on behalf of an owner. |
 | `balanceOf` | Returns the token balance of a specific address. |
 | `totalSupply` | Shows the total amount of tokens in circulation. |
