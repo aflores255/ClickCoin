@@ -48,6 +48,7 @@ The contract is written in **Solidity (0.8.24)** and utilizes OpenZeppelin libra
 | `burn(uint256 amount)` | Allows the owner to burn tokens directly from their address. |
 | `setBurnRate(uint16 _burnRate)` | Allows the owner to modify the burn rate (based on a 10,000 base). |
 | `transfer(address to, uint256 value)` | Overrides the standard ERC20 transfer function to apply the burn amount before transferring tokens. |
+| `transferFrom(address from, address to, uint256 value)` | Overrides the standard ERC20 transferFrom function to apply the burn amount before transferring tokens. |
 
 ## 🛠️ How to Use
 
