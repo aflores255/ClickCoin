@@ -684,11 +684,11 @@
 			]
 		},
 		"clickcoin.sol": {
-			"keccak256": "0x67ba586c5c416cf3c311e234d8718a6fc58bf1188caeaf4b558e9c2d196e651b",
+			"keccak256": "0x4574debe95e0f7e02c148270f222f097ec54b8ad08811c6177d2a8185f0f0db8",
 			"license": "LGPL-3.0-only",
 			"urls": [
-				"bzz-raw://1a39bce0b3cbf98e800b3cdb63284af478ded5f1751d60fcbee7211b40c1dd48",
-				"dweb:/ipfs/QmSYKnwpkP1dnmHggiyX9xwvkvbjL8X2NxeeLinpsqaFzn"
+				"bzz-raw://add4747338ecd246e8aa4e5bf8ee00460c1b8d3cc396a10eb403fd5afe3142b5",
+				"dweb:/ipfs/QmSwP61XeMZYGLqhjiRwuyMedX7yyjVHXTEdvV9uL4rxxc"
 			]
 		}
 	},

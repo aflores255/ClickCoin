@@ -57,8 +57,7 @@ contract ClickCoin is ERC20,Ownable{
         burnRate = _burnRate;
     }
 
-    // Internal functions
-
+    // Transfer and burn fees
     function transfer(address to, uint256 value) public override  minimumTransfer(value) returns (bool) {
         uint256 burnAmount = (value * burnRate) / 10000;
         uint256 sendAmount = value - burnAmount;
@@ -69,6 +68,22 @@ contract ClickCoin is ERC20,Ownable{
             emit Burn(msg.sender, burnAmount);
         }
 
+        return true;
+    }
+
+    // Transfer and burn fees with aproval
+    function transferFrom(address from, address to, uint256 value) public override  minimumTransfer(value) returns (bool) {
+        uint256 burnAmount = (value * burnRate) / 10000;
+        uint256 sendAmount = value - burnAmount;
+
+        address spender = _msgSender();
+        _spendAllowance(from, spender, value);
+        super._transfer(from, to, sendAmount);
+
+        if (burnAmount > 0) {
+            _burn(from,burnAmount);
+            emit Burn(from, burnAmount);
+        }
         return true;
     }
 
